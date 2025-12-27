@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit\Tests;
+namespace Fastwhale\Component\BrowserKit\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\BrowserKit\CookieJar;
-use Symfony\Component\BrowserKit\Exception\BadMethodCallException;
-use Symfony\Component\BrowserKit\Exception\InvalidArgumentException;
-use Symfony\Component\BrowserKit\History;
-use Symfony\Component\BrowserKit\Request;
-use Symfony\Component\BrowserKit\Response;
+use Fastwhale\Component\BrowserKit\CookieJar;
+use Fastwhale\Component\BrowserKit\Exception\BadMethodCallException;
+use Fastwhale\Component\BrowserKit\Exception\InvalidArgumentException;
+use Fastwhale\Component\BrowserKit\History;
+use Fastwhale\Component\BrowserKit\Request;
+use Fastwhale\Component\BrowserKit\Response;
 
 class AbstractBrowserTest extends TestCase
 {
@@ -51,7 +51,7 @@ class AbstractBrowserTest extends TestCase
         $client = $this->getBrowser();
 
         $this->expectException(BadMethodCallException::class);
-        $this->expectExceptionMessage('The "request()" method must be called before "Symfony\\Component\\BrowserKit\\AbstractBrowser::getRequest()".');
+        $this->expectExceptionMessage('The "request()" method must be called before "Fastwhale\\Component\\BrowserKit\\AbstractBrowser::getRequest()".');
 
         $client->getRequest();
     }
@@ -100,7 +100,7 @@ class AbstractBrowserTest extends TestCase
         $client = $this->getBrowser();
 
         $this->expectException(BadMethodCallException::class);
-        $this->expectExceptionMessage('The "request()" method must be called before "Symfony\\Component\\BrowserKit\\AbstractBrowser::getResponse()".');
+        $this->expectExceptionMessage('The "request()" method must be called before "Fastwhale\\Component\\BrowserKit\\AbstractBrowser::getResponse()".');
 
         $client->getResponse();
     }
@@ -110,7 +110,7 @@ class AbstractBrowserTest extends TestCase
         $client = $this->getBrowser();
 
         $this->expectException(BadMethodCallException::class);
-        $this->expectExceptionMessage('The "request()" method must be called before "Symfony\\Component\\BrowserKit\\AbstractBrowser::getInternalResponse()".');
+        $this->expectExceptionMessage('The "request()" method must be called before "Fastwhale\\Component\\BrowserKit\\AbstractBrowser::getInternalResponse()".');
 
         $client->getInternalResponse();
     }
@@ -138,7 +138,7 @@ class AbstractBrowserTest extends TestCase
         $client = $this->getBrowser();
 
         $this->expectException(BadMethodCallException::class);
-        $this->expectExceptionMessage('The "request()" method must be called before "Symfony\\Component\\BrowserKit\\AbstractBrowser::getCrawler()".');
+        $this->expectExceptionMessage('The "request()" method must be called before "Fastwhale\\Component\\BrowserKit\\AbstractBrowser::getCrawler()".');
 
         $client->getCrawler();
     }
@@ -778,12 +778,12 @@ class AbstractBrowserTest extends TestCase
     {
         $client = $this->getBrowser();
         $client->insulate();
-        $client->setNextScript("new Symfony\Component\BrowserKit\Response('foobar')");
+        $client->setNextScript("new Fastwhale\Component\BrowserKit\Response('foobar')");
         $client->request('GET', 'http://www.example.com/foo/foobar');
 
         $this->assertSame('foobar', $client->getResponse()->getContent(), '->insulate() process the request in a forked process');
 
-        $client->setNextScript("new Symfony\Component\BrowserKit\Response('foobar)");
+        $client->setNextScript("new Fastwhale\Component\BrowserKit\Response('foobar)");
 
         try {
             $client->request('GET', 'http://www.example.com/foo/foobar');
@@ -885,7 +885,7 @@ class AbstractBrowserTest extends TestCase
         $client = $this->getBrowser();
 
         $this->expectException(BadMethodCallException::class);
-        $this->expectExceptionMessage('The "request()" method must be called before "Symfony\\Component\\BrowserKit\\AbstractBrowser::getInternalRequest()".');
+        $this->expectExceptionMessage('The "request()" method must be called before "Fastwhale\\Component\\BrowserKit\\AbstractBrowser::getInternalRequest()".');
 
         $client->getInternalRequest();
     }

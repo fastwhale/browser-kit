@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit\Exception;
+namespace Fastwhale\Component\BrowserKit\Exception;
 
 /**
  * Base ExceptionInterface for the BrowserKit component.

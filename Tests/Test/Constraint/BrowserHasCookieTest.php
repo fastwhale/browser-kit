@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit\Tests\Test\Constraint;
+namespace Fastwhale\Component\BrowserKit\Tests\Test\Constraint;
 
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\TestFailure;
-use Symfony\Component\BrowserKit\AbstractBrowser;
-use Symfony\Component\BrowserKit\Cookie;
-use Symfony\Component\BrowserKit\CookieJar;
-use Symfony\Component\BrowserKit\Test\Constraint\BrowserHasCookie;
+use Fastwhale\Component\BrowserKit\AbstractBrowser;
+use Fastwhale\Component\BrowserKit\Cookie;
+use Fastwhale\Component\BrowserKit\CookieJar;
+use Fastwhale\Component\BrowserKit\Test\Constraint\BrowserHasCookie;
 
 class BrowserHasCookieTest extends TestCase
 {

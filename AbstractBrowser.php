@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit;
+namespace Fastwhale\Component\BrowserKit;
 
-use Symfony\Component\BrowserKit\Exception\BadMethodCallException;
-use Symfony\Component\BrowserKit\Exception\InvalidArgumentException;
-use Symfony\Component\BrowserKit\Exception\LogicException;
-use Symfony\Component\BrowserKit\Exception\RuntimeException;
-use Symfony\Component\DomCrawler\Crawler;
-use Symfony\Component\DomCrawler\Form;
-use Symfony\Component\DomCrawler\Link;
+use Fastwhale\Component\BrowserKit\Exception\BadMethodCallException;
+use Fastwhale\Component\BrowserKit\Exception\InvalidArgumentException;
+use Fastwhale\Component\BrowserKit\Exception\LogicException;
+use Fastwhale\Component\BrowserKit\Exception\RuntimeException;
+use Fastwhale\Component\DomCrawler\Crawler;
+use Fastwhale\Component\DomCrawler\Form;
+use Fastwhale\Component\DomCrawler\Link;
 use Symfony\Component\Process\PhpProcess;
 
 /**

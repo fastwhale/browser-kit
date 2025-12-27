@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit\Tests;
+namespace Fastwhale\Component\BrowserKit\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\BrowserKit\Cookie;
-use Symfony\Component\BrowserKit\Exception\InvalidArgumentException;
-use Symfony\Component\BrowserKit\Exception\UnexpectedValueException;
+use Fastwhale\Component\BrowserKit\Cookie;
+use Fastwhale\Component\BrowserKit\Exception\InvalidArgumentException;
+use Fastwhale\Component\BrowserKit\Exception\UnexpectedValueException;
 
 class CookieTest extends TestCase
 {

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit\Tests;
+namespace Fastwhale\Component\BrowserKit\Tests;
 
-use Symfony\Component\BrowserKit\AbstractBrowser;
-use Symfony\Component\BrowserKit\Response;
+use Fastwhale\Component\BrowserKit\AbstractBrowser;
+use Fastwhale\Component\BrowserKit\Response;
 
 class TestClient extends AbstractBrowser
 {

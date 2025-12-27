@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit;
+namespace Fastwhale\Component\BrowserKit;
 
-use Symfony\Component\BrowserKit\Exception\LogicException;
+use Fastwhale\Component\BrowserKit\Exception\LogicException;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Component\Mime\Part\AbstractPart;
 use Symfony\Component\Mime\Part\DataPart;

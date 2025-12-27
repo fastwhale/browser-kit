@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit\Tests;
+namespace Fastwhale\Component\BrowserKit\Tests;
 
-use Symfony\Component\BrowserKit\CookieJar;
-use Symfony\Component\BrowserKit\History;
-use Symfony\Component\BrowserKit\HttpBrowser;
+use Fastwhale\Component\BrowserKit\CookieJar;
+use Fastwhale\Component\BrowserKit\History;
+use Fastwhale\Component\BrowserKit\HttpBrowser;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
 use Symfony\Contracts\HttpClient\HttpClientInterface;

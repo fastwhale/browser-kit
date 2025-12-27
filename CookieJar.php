@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit;
+namespace Fastwhale\Component\BrowserKit;
 
-use Symfony\Component\BrowserKit\Exception\InvalidArgumentException;
+use Fastwhale\Component\BrowserKit\Exception\InvalidArgumentException;
 
 /**
  * CookieJar.

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit;
+namespace Fastwhale\Component\BrowserKit;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>

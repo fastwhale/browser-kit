@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit\Tests;
+namespace Fastwhale\Component\BrowserKit\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\BrowserKit\Exception\JsonException;
-use Symfony\Component\BrowserKit\Response;
+use Fastwhale\Component\BrowserKit\Exception\JsonException;
+use Fastwhale\Component\BrowserKit\Response;
 
 class ResponseTest extends TestCase
 {

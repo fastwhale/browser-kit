@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit\Test\Constraint;
+namespace Fastwhale\Component\BrowserKit\Test\Constraint;
 
 use PHPUnit\Framework\Constraint\Constraint;
-use Symfony\Component\BrowserKit\AbstractBrowser;
+use Fastwhale\Component\BrowserKit\AbstractBrowser;
 
 final class BrowserHasCookie extends Constraint
 {
